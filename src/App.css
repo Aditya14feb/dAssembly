@@ -1,0 +1,135 @@
+.main_container{
+  height: 100vh;
+  max-width: 100%;
+  background: #000;
+  color: #ddd;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+}
+
+.navbar{
+  margin-bottom: 50px;
+}
+
+.main_contents{
+  height: 90%;
+  max-width: 90%;
+  padding: 20px 0 0 80px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+.aside{
+  border: solid 1px #ddd;
+}
+.project_category{
+  margin-bottom: 80px;
+  
+}
+.project_contents{
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr;
+}
+.project_category h1{
+  font-size: 36px;
+  font-family: "pf-din", Impact, sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.project_category h2{
+  font-family: 'news';
+    text-transform: none;
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 30px;
+    margin-top: 3px;
+}
+
+.project_category .project_part a{
+  display: block;
+    background: #1f1f1f;
+    margin-bottom: 8px;
+    padding: 8px 8px 8px 43px;
+    color: #ccc;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: left;
+    width: 380px;
+    position: relative;
+    line-height: 24px;
+    box-shadow: 1px 1px 4px black;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    
+}
+.project_category .project_part a:hover{
+  color:#fff;
+  background:#393939;
+  
+}
+.project_part a:hover{
+  margin-left: 1rem;
+}
+
+.project_part a:hover .checkbox{
+  background:#666666;
+}
+
+.project_category .project_part a .checkbox{
+  border-radius: 100%;
+    text-align: center;
+    background: #444;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+.project_part .theme{
+  background: url('./images/paint_palette.png');
+  background-position: 0 0;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  width: 32px;
+  height: 24px;
+}
+.project_category .project_screenshot{
+  float: right;
+  position: relative;
+  height: 183px;
+  width: 258px;
+}
+.screenshot_header{
+  height: 20px;
+    width: 253px;
+    background: #444;
+    border-radius: 5px 5px 0px 0px;
+    padding-left: 5px;
+}
+.project_category .project_screenshot .screenshot_header span{
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  background: #888;
+  display: inline-block;
+  margin-left: 3px;
+}
+.screenshot_image{
+  height: 163px;
+  width: 258px;
+  background: url('./images/project1.png');
+  overflow: hidden;
+  background-repeat: no-repeat;
+  border-radius: 0px 0px 5px 5px;
+}
